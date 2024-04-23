@@ -46,7 +46,3 @@
 
     Isso será importantíssimo quando estivermos lidando com banco de dados.
 */
-
-public class BoxingUnboxingWrapping {
-    
-}
