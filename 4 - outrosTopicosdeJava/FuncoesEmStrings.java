@@ -30,6 +30,16 @@ public class FuncoesEmStrings {
         
         String[] vect = original.split(" "); // Divide a string em partes, com base no espaço em branco - [abcde, FGHIJ, ABC, abc, DEFG]
 
+        // StringBuilder - Ideal para strings enormes
+        /*
+        StringBuilder sb = new StringBuilder();
+        sb.append("Def\n");
+        sb.append("Ghi\n");
+        sb.append("Jkl\n"); 
+        System.out.println(sb.toString());
+
+        Melhor uso na memória!
+        */
         
     }
 }
