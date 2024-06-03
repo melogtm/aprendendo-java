@@ -1,0 +1,26 @@
+Solução 1 (Muito Ruim) - Validação no Programa principal
+ 
+Repetição desnecessária :(
+
+Problema de delegação - quem deverá saber sobre as regras para se realizar a Reserva, é a classe Reserva.
+
+Solução 2 (Ruim) - Retornando String
+
+Ao menos, delegamos a lógica para a classe Reserva.
+
+Solução 3 (Boa) - Tratamento de Exceções
+
+Exemplo: 
+    public void updateDates(LocalDate checkIn, LocalDate checkOut) {
+        if ((checkIn.isBefore(LocalDate.now())) || (checkOut.isBefore(LocalDate.now()))) {
+            throw new IllegalArgumentException("Check-out date must be after check-in date");
+        }
+        if (!checkOut.isAfter(checkIn)) {
+            throw new IllegalArgumentException("Check-out date must be after check-in date");
+        }
+
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
+    }
+
+    Podemos criar exceptions personalizadas em models/exceptions 
