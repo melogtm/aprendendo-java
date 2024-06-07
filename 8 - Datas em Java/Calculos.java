@@ -35,9 +35,5 @@ public class Calculos {
         Duration t2 = Duration.between(data.atTime(0, 0), pastWeekLocalDate.atTime(0, 0));
         // ou 
         Duration t3 = Duration.between(data.atStartOfDay(), pastWeekLocalDate.atStartOfDay());
-
-
-
-
     }    
 }
